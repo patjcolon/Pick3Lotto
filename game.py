@@ -9,7 +9,8 @@ from helper_modules import classes, functions
 def main():
     """Loops the game for the player until they quit."""
     functions.title_animation()
-    player = classes.Player(2417.56)
+    # player = classes.Player(2417.56)
+    player = classes.Player(3.01)
     
     while True:
         functions.display_main_menu()
@@ -21,7 +22,7 @@ def main():
             game = classes.StraightMode()
 
             while True:
-                if player.cash <= 0:
+                if player.cash <= 1:
                     print(f"You have ${player.cash:,.2f}. You do not have enough money to play.")
                     print("Returning to Main Menu.")
                     input("Press Enter to continue.")
@@ -61,7 +62,7 @@ def main():
             game = classes.BoxMode()
 
             while True:
-                if player.cash <= 0:
+                if player.cash <= 1:
                     print(f"You have ${player.cash:,.2f}. You do not have enough money to play.")
                     print("Returning to Main Menu.")
                     input("Press Enter to continue.")
@@ -101,7 +102,7 @@ def main():
             game = classes.StraightBoxMode()
 
             while True:
-                if player.cash <= 0:
+                if player.cash <= 1:
                     print(f"You have ${player.cash:,.2f}. You do not have enough money to play.")
                     print("Returning to Main Menu.")
                     input("Press Enter to continue.")
