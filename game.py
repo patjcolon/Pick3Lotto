@@ -9,8 +9,7 @@ from helper_modules import classes, functions
 def main():
     """Loops the game for the player until they quit."""
     functions.title_animation()
-    # player = classes.Player(2417.56)
-    player = classes.Player(3.01)
+    player = classes.Player(2417.56)
     
     while True:
         functions.display_main_menu()
